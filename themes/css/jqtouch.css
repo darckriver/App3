@@ -1509,8 +1509,8 @@ body {
 }
 /* line 216, ../scss/include/_skeleton.scss */
 #jqt .leftButton, #jqt .cancel, #jqt .back {
-  left: 6px;
-  right: auto;
+	left: 1px;
+	right: auto;
 }
 /* line 221, ../scss/include/_skeleton.scss */
 #jqt .add {
