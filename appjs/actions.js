@@ -1,5 +1,5 @@
 // JavaScript Document
-function deviceInfo(){
+function deviceInformacion(){
 var s='Esto es otra prueba';
 		$('#devic table td').eq(1).text('android luis');
 		//$('#device table td').eq(3).text(device.cordova);
@@ -9,5 +9,5 @@ var s='Esto es otra prueba';
 }
 
 $(document).ready(function(){    
-	document.addEventListener("deviceready",deviceInfo(), false);
+	document.addEventListener("deviceready",deviceInformacion(), false);
 });
