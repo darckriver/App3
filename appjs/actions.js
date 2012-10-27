@@ -1,6 +1,6 @@
 // JavaScript Document
 function deviceInfo(){
-var s='Esto es otra prueba'
+var s='Esto es otra prueba';
 		$('#device table td').eq(1).text('android luis');
 		//$('#device table td').eq(3).text(device.cordova);
 		$('#device table td').eq(5).text(windows.device.name + ' Hola');
