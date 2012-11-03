@@ -195,8 +195,8 @@ $(document).ready(function(){
 			eventHistory('La aplicaci&oacute;n se ha desconectado');
 		}, false);
 		//Contactos
-		  navigator.contacts.find(fields, onSuccess, onError, options);
-		//readContacts();
+		 // navigator.contacts.find(fields, onSuccess, onError, options);
+		readContacts();
 		//Acciones de formularios
 		$('.sendForm').click(function(){
 			switch($(this).parents('ul').attr('id')){
@@ -210,7 +210,7 @@ $(document).ready(function(){
 
 		});
 		//archivos
-		readFiles();
+		//readFiles();
 	}, false);
 });
 function eventHistory(action){
