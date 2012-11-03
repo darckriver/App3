@@ -8,6 +8,19 @@ function pgAlert(mess){
 	}
 	navigator.notification.alert(mess, error, title, btnName);
 }
+
+
+ function onSuccess(contacts) {
+        for (var i=0; i<contacts.length; i++) {
+            console.log("Display Name = " + contacts[i].displayName);
+        }
+    }
+
+    // onError: Failed to get the contacts
+    //
+    function onError(contactError) {
+        alert('onError!');
+    }
 //Datos del dispositivo
 /*function deviceData(){
 	$('#devic table td').eq(1).text(device.name);
@@ -182,7 +195,8 @@ $(document).ready(function(){
 			eventHistory('La aplicaci&oacute;n se ha desconectado');
 		}, false);
 		//Contactos
-		readContacts();
+		  navigator.contacts.find(fields, onSuccess, onError, options);
+		//readContacts();
 		//Acciones de formularios
 		$('.sendForm').click(function(){
 			switch($(this).parents('ul').attr('id')){
