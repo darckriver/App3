@@ -209,7 +209,7 @@ $(document).ready(function(){
 
 		});
 		//archivos
-		//readFiles();
+		readFiles();
 	}, false);
 });
 function eventHistory(action){
