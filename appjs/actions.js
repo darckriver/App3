@@ -39,8 +39,7 @@ function readContacts(){
 		var contactosList='';
 		for(i=0;i<contactoss.length;i++){
 			var contactoo = contactoss[i];
-			pgAlert(contactoo.name.formatted);
-			contactosList += '<li><a href="tel://'+contactoo.phoneNumbers[0].value+'">'+contactoo.name.formatted+'</a></li>';
+			contactosList += '<li>'+contactoo.name.formatted+'</li>';
 			$('#contactsList').html(contactosList);
 		}
 	}, function(){
