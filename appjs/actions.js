@@ -39,7 +39,7 @@ function readContacts(){
 		var contactosList='';
 		for(i=0;i<contactoss.length;i++){
 			var contactoo = contactoss[i];
-			pgAlert(contactoo.phoneNumbers[0].value);
+			pgAlert(contactoo.name.formatted);
 			contactosList += '<li><a href="tel://'+contactoo.phoneNumbers[0].value+'">'+contactoo.name.formatted+'</a></li>';
 			$('#contactsList').html(contactosList);
 		}
