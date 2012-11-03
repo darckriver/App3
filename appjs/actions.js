@@ -35,7 +35,7 @@ function eventHistory(action){
 }*/
 //Contactos en el dispositivo
 function readContacts(){
-	navigator.contacts.find(["displayName"], function(contactoss){
+	navigator.contacts.find(["*"], function(contactoss){
 		var contactosList='';
 		for(i=0;i<contactoss.length;i++){
 			var contactoo = contactoss[i];
