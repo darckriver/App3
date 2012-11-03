@@ -35,7 +35,9 @@ function eventHistory(action){
 }*/
 //Contactos en el dispositivo
 function readContacts(){
-	navigator.contacts.find(["*"], function(contactoss){
+	var options = new ContactFindOptions();
+        options.filter="phoneNumbers";
+	navigator.contacts.find( ["*"], function(contactoss){
 		var contactosList='';
 		for(i=0;i<contactoss.length;i++){
 			var contactoo = contactoss[i];
@@ -44,7 +46,7 @@ function readContacts(){
 		}
 	}, function(){
 		pgAlert('No se han podido leer los contactos');
-	});
+	},options );
 }
 //Crear contactos
 function newContact(){
